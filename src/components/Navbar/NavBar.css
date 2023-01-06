@@ -1,0 +1,45 @@
+.NavbarItems {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 100px;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 50px;
+  list-style: none;
+  text-align: left;
+  justify-content: end;
+  padding-top: 1rem;
+  padding-left: 0rem;
+  font-size: 25px;
+}
+
+.nav-links {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+}
+
+.nav-links-clicked {
+  color: white;
+  background-color: #71e4ed;
+  text-decoration: none;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.nav-links:hover {
+  color: white;
+  background-color: #71e4ed;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+  padding-left: 5px;
+  padding-right: 5px;
+}

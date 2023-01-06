@@ -1,0 +1,10 @@
+import { SerializedFarmConfig } from "../types"
+
+export const getFarmConfig = async (chainId: number) => {
+    try {
+        return (await import(`/${chainId}.ts`)).default as SerializedFarmConfig[]
+    } catch (error) {
+        console.error('Cannot get farm config', error, chainId)
+    }
+    return []
+}
